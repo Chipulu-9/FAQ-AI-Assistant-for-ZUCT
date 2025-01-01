@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZUCT Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>ZUCT Quiz App</h1>
+        <p>Your journey to knowledge begins here!</p>
+    </header>
+    <main class="content">
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>Welcome to the ZUCT Quiz App! This platform is designed to test your knowledge across various subjects and provide a fun, interactive learning experience. Get ready to challenge yourself and see how much you know!</p>
+        </section>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ul>
+                <li>Click the "Start Quiz" button to begin.</li>
+                <li>Read each question carefully and select the correct answer.</li>
+                <li>Click "Next" to proceed to the next question.</li>
+                <li>Your score will be displayed at the end of the quiz.</li>
+            </ul>
+        </section>
+        <div class="start-btn-container">
+            <button onclick="startQuiz()" class="start-btn">Start Quiz</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 ZUCT Quiz App. All rights reserved.</p>
+    </footer>
+    <script>
+        function startQuiz() {
+            alert('Starting Quiz...');
+            // Replace with navigation to the quiz page
+            window.location.href = 'quiz.html';
+        }
+    </script>
+</body>
+</html>

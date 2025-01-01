@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Quiz - ZUT Quiz App</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../images/zut.svg" alt="ZUT Logo" class="logo">
+            <h1>ZUT Quiz App</h1>
+            <h2 class="faculty-title">Engineering</h2>
+        </div>
+
+        <div class="quiz-info">
+            <p>Question <span id="current-question">1</span> of 10</p>
+        </div>
+
+        <div id="quiz-container">
+            <div id="question-container">
+                <h3 id="question"></h3>
+                <div id="answer-buttons" class="btn-grid"></div>
+            </div>
+
+            <div class="controls">
+                <button id="next-btn" class="next-btn hide">Next Question</button>
+                <button id="restart-btn" class="restart-btn hide">Restart Quiz</button>
+            </div>
+
+            <div id="score-container" class="hide">
+                <h2>Quiz Complete!</h2>
+                <p>Your Score: <span id="score">0</span></p>
+                <div id="feedback-message"></div>
+            </div>
+        </div>
+
+        <a href="../index.html" class="home-btn">Back to Home</a>
+    </div>
+    <script src="../js/faculty.js"></script>
+</body>
+
+</html>

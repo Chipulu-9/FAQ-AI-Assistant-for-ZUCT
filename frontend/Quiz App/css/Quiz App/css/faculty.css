@@ -1,0 +1,44 @@
+/* ... existing styles ... */
+
+.faculty-btn {
+    width: 150px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.faculty-btn:hover {
+    background-color: var(--hover-blue);
+}
+
+.faculty-title {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.home-btn {
+    display: block;
+    width: 150px;
+    padding: 10px 0;
+    margin: 30px auto 0;
+    text-align: center;
+    background-color: var(--secondary-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: var(--hover-blue);
+}

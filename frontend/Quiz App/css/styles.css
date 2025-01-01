@@ -1,0 +1,212 @@
+:root {
+    --primary-blue: #003366;
+    --secondary-blue: #0066cc;
+    --light-blue: #e6f0ff;
+    --hover-blue: #004d99;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--light-blue);
+}
+
+.container {
+    width: 800px;
+    max-width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.1);
+}
+
+
+/* Header Styles */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    /* Space between header and faculty buttons */
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+h1 {
+    color: var(--primary-blue);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Faculty Selection Styles */
+
+.faculty-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.faculty-btn {
+    width: 150px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.faculty-btn:hover {
+    background-color: var(--hover-blue);
+    transform: translateY(-2px);
+}
+
+
+/* Quiz Container Styles (for quiz pages) */
+
+#quiz-container {
+    margin-top: 30px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--hover-blue);
+}
+
+
+/* Control Buttons */
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.next-btn,
+.restart-btn {
+    padding: 10px 20px;
+    background-color: var(--secondary-blue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.next-btn:hover,
+.restart-btn:hover {
+    background-color: var(--hover-blue);
+}
+
+
+/* Faculty Title (for quiz pages) */
+
+.faculty-title {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Home Button (for quiz pages) */
+
+.home-btn {
+    display: block;
+    width: 150px;
+    padding: 10px 0;
+    margin: 30px auto 0;
+    text-align: center;
+    background-color: var(--secondary-blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+    background-color: var(--hover-blue);
+}
+
+
+/* Utility Classes */
+
+.hide {
+    display: none;
+}
+
+
+/* Score Container */
+
+#score-container {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--primary-blue);
+}
+
+
+/* Question Styles */
+
+#question {
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    .logo {
+        width: 120px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .faculty-btn {
+        width: 130px;
+        font-size: 1rem;
+    }
+}
