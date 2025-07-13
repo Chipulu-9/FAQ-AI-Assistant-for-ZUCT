@@ -50,7 +50,7 @@
                 headers: {
                     "Content-Type": "application/json",
                     "x-rapidapi-host": "copilot5.p.rapidapi.com",
-                    "x-rapidapi-key": "0ca1780071mshde25a3d03524f3cp146211jsn93facbf3b4b4"
+                    "x-rapidapi-key": ""
                 },
                 features: ["basic", "balanced"],
                 load: 20, // Simulated load percentage
